@@ -8,6 +8,11 @@
         <Authors>FlandreDevs,b1acksoil</Authors>
         <Description>Templates for creating Flandre applications.</Description>
         <PackageTags>flandre;templates;chatbot;bot</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/FlandreDevs/Templates</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/FlandreDevs/Templates.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <Copyright>FlandreDevs (C) 2023-present</Copyright>
 
         <TargetFramework>net6.0</TargetFramework>
 
