@@ -1,0 +1,35 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "FlandreDevs",
+  "classifications": [
+    "Console"
+  ],
+  "identity": "Flandre.Templates.Framework",
+  "name": "Flandre.Framework Template",
+  "shortName": "flandre",
+  "sourceName": "Flandre.Templates.Framework",
+  "defaultName": "FlandreApp",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "primaryOutputs": [
+    {
+      "path": "Flandre.Templates.Framework.csproj"
+    }
+  ],
+  "postActions": [
+    {
+      "id": "restore",
+      "description": "还原所需的 NuGet 包",
+      "manualInstructions": [
+        {
+          "text": "手动执行 'dotnet restore'"
+        }
+      ],
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError": true
+    }
+  ]
+}

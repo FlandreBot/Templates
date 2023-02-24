@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Title>Flandre.Templates</Title>
+        <PackageType>Template</PackageType>
+        <PackageVersion>1.0.0-alpha.1</PackageVersion>
+        <PackageId>Flandre.Templates</PackageId>
+        <Authors>FlandreDevs,b1acksoil</Authors>
+        <Description>Templates for creating Flandre applications.</Description>
+        <PackageTags>flandre;templates;chatbot;bot</PackageTags>
+
+        <TargetFramework>net6.0</TargetFramework>
+
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+        <NoWarn>NU5128</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+        <Compile Remove="**\*" />
+    </ItemGroup>
+
+</Project>
