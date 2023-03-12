@@ -8,15 +8,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Flandre.Framework" Version="1.0.0-alpha.7"/>
+        <PackageReference Include="Flandre.Framework" Version="1.0.0-rc.1" />
     </ItemGroup>
 
     <ItemGroup>
         <!-- 自动复制配置文件至输出目录 -->
-        <Content Include="**\*.json"
-                 Exclude="bin\**\*;obj\**\*"
-                 CopyToOutputDirectory="PreserveNewest"
-                 CopyToPublishDirectory="PreserveNewest"/>
+        <Content Include="**\*.json" Exclude="bin\**\*;obj\**\*" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
     </ItemGroup>
 
 </Project>

@@ -9,19 +9,19 @@ public sealed class ExamplePlugin : Plugin
     /// <summary>
     /// 每次收到消息时触发。
     /// </summary>
-    public override async Task OnMessageReceived(MessageContext ctx)
+    public override async Task OnMessageReceivedAsync(MessageContext ctx)
     {
         // 如果消息文本为 "Hello!"，
         if (ctx.Message.GetText() == "Hello!")
         {
             // 则发送一条 "World!" 消息作为回复。
-            await ctx.Bot.SendMessage(ctx.Message, "World!");
+            await ctx.Bot.SendMessageAsync(ctx.Message, "World!");
         }
     }
 
     /// <summary>
     /// 定义一条指令。<br/>
-    /// 向机器人发送 "example (num)" 时触发，其中 num 为一个合法的 double 值。
+    /// 向机器人发送 "example {num}" 时触发，其中 num 为一个合法的 double 值。
     /// </summary>
     /// 
     /// <param name="num">
@@ -36,8 +36,8 @@ public sealed class ExamplePlugin : Plugin
     /// 发送：example 1.28 <br/>
     /// 回复：1.28 的二次方为 1.6384。
     /// </example>
-    [Command("example")]
-    public string OnExampleCommand(double num)
+    [Command]
+    public string Example(double num)
     {
         return $"{num} 的二次方为 {Math.Pow(num, 2)}。";
     }
