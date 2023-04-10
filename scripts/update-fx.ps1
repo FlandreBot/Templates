@@ -46,7 +46,7 @@ $content = [System.IO.File]::ReadAllText($TemplatesRootProjectPath)
 )
 
 Write-Output "Committing..."
-$releaseMessage = "release(templates-fx): v" + $FrameworkVersion
+$releaseMessage = "release(template-fx): v" + $FrameworkVersion
 git add .
 git commit -m $releaseMessage
 
