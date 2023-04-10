@@ -3,7 +3,7 @@
     <PropertyGroup>
         <Title>Flandre.Templates</Title>
         <PackageType>Template</PackageType>
-        <PackageVersion>1.0.0-rc.1</PackageVersion>
+        <PackageVersion>1.0.0-rc.5</PackageVersion>
         <PackageId>Flandre.Templates</PackageId>
         <Authors>FlandreDevs,b1acksoil</Authors>
         <Description>Templates for creating Flandre applications.</Description>
